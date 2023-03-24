@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                  // on below line we are getting data from our response
                  // and setting it in variables.
                  recyclerView.layoutManager = LinearLayoutManager(this)
-                 adapter = MatchesAdaper(this, matchModel)
+                 adapter = MatchesAdaper(this, matchModel.nameValuePairs?.data?.values)
                  // Setting the Adapter with the recyclerview
                  recyclerView.adapter = adapter
             } catch (e: Exception) {
